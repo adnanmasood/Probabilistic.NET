@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+
+<BNetNodes>
+  <Burglary Range='2'>
+    <Parents num='0' />
+    <CPT_Col>
+      <CP> 0.999 </CP>
+    </CPT_Col>
+  </Burglary>
+
+  <Earthquake Range='2'>
+    <Parents num='0' />
+    <CPT_Col>
+      <CP> 0.998 </CP>
+    </CPT_Col>
+  </Earthquake>
+
+  <Alarm Range='2'>
+    <Parents num='2'>
+      <Burglary />
+      <Earthquake />
+    </Parents>
+    <CPT_Col>
+      <CP> 0.999</CP>
+      <CP> 0.06 </CP>
+      <CP> 0.71 </CP>
+      <CP> 0.05 </CP>
+    </CPT_Col>
+  </Alarm>
+
+  <JohnCalls Range='2'>
+    <Parents num='1'>
+      <Alarm />
+    </Parents>
+    <CPT_Col>
+      <CP> 0.95 </CP>
+      <CP> 0.10 </CP>
+    </CPT_Col>
+  </JohnCalls>
+
+  <MaryCalls Range='2'>
+    <Parents num='1'>
+      <Alarm />
+    </Parents>
+    <CPT_Col>
+      <CP> 0.99 </CP>
+      <CP> 0.30 </CP>
+    </CPT_Col>
+  </MaryCalls>
+</BNetNodes>

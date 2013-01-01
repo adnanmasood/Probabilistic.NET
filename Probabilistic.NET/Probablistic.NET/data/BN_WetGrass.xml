@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+
+<BNetNodes>
+  <Cloudy Range='2'>
+    <Parents num='0' />
+    <CPT_Col>
+      <CP> 0.5 </CP>
+    </CPT_Col>
+  </Cloudy>
+
+  <Sprinkler Range='2'>
+    <Parents num='1'>
+      <Cloudy />
+    </Parents>
+    <CPT_Col>
+      <CP> 0.5 </CP>
+      <CP> 0.9 </CP>
+    </CPT_Col>
+  </Sprinkler>
+
+  <Rain Range='2'>
+    <Parents num='1'>
+      <Cloudy />
+    </Parents>
+    <CPT_Col>
+      <CP> 0.8 </CP>
+      <CP> 0.2 </CP>
+    </CPT_Col>
+  </Rain>
+  b
+  <WetGrass Range='2'>
+    <Parents num='2'>
+      <Sprinkler />
+      <Rain />
+    </Parents>
+    <CPT_Col>
+      <CP> 1.0 </CP>
+      <CP> 0.1 </CP>
+      <CP> 0.1 </CP>
+      <CP> 0.01</CP>
+    </CPT_Col>
+  </WetGrass>
+</BNetNodes>

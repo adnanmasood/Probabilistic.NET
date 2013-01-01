@@ -1,0 +1,29 @@
+The BeliefNet Layout
+
+Node: cloudy
+    Total 0 Parents
+    CPT
+       0.5   0.5
+
+Node: sprinkler
+    Total 1 Parents
+    Parents:   cloudy
+    CPT
+       0.5   0.5
+       0.9   0.1
+
+Node: rain
+    Total 1 Parents
+    Parents:   cloudy
+    CPT
+       0.8   0.2
+       0.2   0.8
+
+Node: wetgrass
+    Total 2 Parents
+    Parents:   sprinkler   rain
+    CPT
+       1   0
+       0.1   0.9
+       0.1   0.9
+       0.01   0.99
