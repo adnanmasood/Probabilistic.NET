@@ -1,8 +1,10 @@
 Probablistic.NET	
 
-This library is an effort to provide common probabilistic programming library functions.
+This library is an effort to provide common probabilistic programming library functions. The Probabilistic programing languages
+embed probabilistic concepts by providing high-level constructs for specifying models that capture both uncertainty and structure.
 
 The original idea is inspired by the works of Infer.NET - Microsoft Research, Inference in Belief Networks by Howard Zhou and Dr. Szymon Jaroszewicz
+
 
 Released under MIT License.
 
